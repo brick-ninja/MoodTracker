@@ -1,12 +1,14 @@
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet } from 'react-native';
+import { AppProvider } from './App.provider';
 import { BottomTabNavigator } from './screens/BottomTabs.navigator';
 
 export const App: React.FC = () => {
   return (
-    <NavigationContainer>
-      <BottomTabNavigator />
-    </NavigationContainer>
+    <AppProvider>
+      <NavigationContainer>
+        <BottomTabNavigator />
+      </NavigationContainer>
+    </AppProvider>
   );
 };
