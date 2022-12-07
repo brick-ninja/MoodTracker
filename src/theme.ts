@@ -1,3 +1,7 @@
+// import { Dimensions } from 'react-native';
+
+// const screenWidth = Dimensions.get('window')
+
 export const theme = {
   //colors
   colorPurple: '#454C73',
